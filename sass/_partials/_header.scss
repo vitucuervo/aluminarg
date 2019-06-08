@@ -33,6 +33,10 @@
 			position: relative;
 			padding: 0 15px;
 
+			&:hover {
+				color: $blue-2;
+			}
+
 			&:not(:first-child) {
 				border-left: 1px solid #FFFFFF;
 			}
@@ -45,6 +49,10 @@
 .logo {
 	display: flex;
 	width: 200px;
+
+	a {
+		display: flex;
+	}
 
 	svg {
 		width: 100%;
@@ -169,7 +177,7 @@
 		padding: 10px 15px;
 		transition: $default-transition;
 
-		&:hover {
+		&:hover, &.-active {
 			background-color: $blue-2;
 		}
 
