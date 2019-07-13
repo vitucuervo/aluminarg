@@ -114,9 +114,13 @@ body {
 			justify-content: center;
 			height: 190px;
 			background-color: $gray-6;
-			background-size: cover;
+			background-size: auto 100%;
 			background-repeat: no-repeat;
 			background-position: center;
+
+			&.-contain {
+				background-size: contain;
+			}
 
 			img {
 				max-height: 100%;
@@ -131,6 +135,9 @@ body {
 		}
 
 		.item-description {
+			justify-content: space-between;
+			display: flex;
+			flex-direction: column;
 			flex-grow: 1;
 			padding: 10px;
 
